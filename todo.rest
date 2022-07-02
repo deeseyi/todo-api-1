@@ -1,0 +1,30 @@
+
+GET http://localhost:3000/todo
+
+### create todo
+POST http://localhost:3000/todo
+Content-Type: application/json
+
+{
+  "title": "Buy corn",
+  "body": "Buy milk from the store",
+  "completed": false
+}
+
+### get 1 todo
+GET http://localhost:3000/todo/36e6d22d-2c7d-433e-8071-5bc066638662
+Content-Type: application/json
+
+###
+PUT http://localhost:3000/todo/eba351ea-8234-40de-af40-8d98c488762d
+Content-Type: application/json
+
+{
+  "title": "cook beans",
+  "body": "  cook beans for dinner",
+  "completed": true
+}
+
+###
+DELETE http://localhost:3000/todo/23512b81-9ac2-4e96-9a1e-aa6fa4cd2cd6
+Content-Type: application/json
